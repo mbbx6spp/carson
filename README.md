@@ -1,9 +1,6 @@
 # Carson
 
-The real bulter. Jenkins and Hudson suck arse in comparison.
-
-I am, of course, referring to the horrible excuses for CI servers (Jenkins
-and Hudson).
+The real butler of continuously delivered software products.
 
 ## Overview
 
@@ -12,10 +9,12 @@ watches British TV period dramas. Deal with it.
 
 This project is an attempt to build a continuous delivery toolkit that can
 be run on a cluster of decentralized nodes, removing the most common single
-points of failure, the shared datastore and the typically disgusting hairball
-of XML configuration files that need to be synced across master nodes.
+points of failure, the shared datastore, as well as the typically disgusting
+hairball of XML configuration files that need to be managed across master
+nodes.
 
-Much more to come.
+Much more to come. Just the README.md and LICENSE at the moment, but bare
+with me.
 
 ## Goals
 
@@ -30,23 +29,22 @@ should be exposed to the _upstairs_. And BTW by _upstairs_ I mean developers
 who want to use Carson to continuously deliver software. Also "drama" refers
 to runtime failures encountered that should (assuming you provision enough
 redundancy when deploying Carson) have simple and reasonable policies to
-retry/redirect requests, etc to fulfill user requests.
+retry/redirect requests, etc to fulfill user/triggered requests.
 * Carson will have a focus on separating concerns using decentralized
 semantics wherever possible. This means if it is possible to build a feature
-using decentralized protocols, then it will be (eventually, first cuts might
-not be decentralized depending on what is relatively prioritized). The
-purpose of this is to remove single points of failure when possible.
+using decentralized protocols, then it will be (eventually). The purpose of
+this is to remove single points of failure when possible.
 * Carson will be configuration management friendly. Fuck 30,000+ lines of
 XML configuration for a Jenkins server. Yes. That is unreasonable and
 completely insane. Carson instead will think of ease of configuration
 management from the get-go.
 
-A secondary goal of Carson is to offer a pluggable design to enable others
-to contribute various forms of authentication and authorization integrations
-to numerous notification medium functionality (e.g. email, IRC, XMPP,
-Twitter). The way I plan to promote _pluggable design_ of separate
-concerns of the application is to define simple yet effective protocols for
-each separate concern.
+A secondary goal of Carson is to offer well defined "protocols" for
+extension enabling others to contribute various forms of authentication and
+authorization integrations or numerous notification medium functionality
+(e.g. email, IRC, XMPP, Twitter). The way I plan to promote _pluggable
+design_ of separate concerns of the application is to define simple yet
+effective protocols for each separate concern.
 
 Note: this is quite opposite to the priorities of Jenkins and Hudson. The
 focus of these tools is on "flexibility" not usability. The above two goals
