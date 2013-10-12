@@ -38,18 +38,23 @@ this is to remove single points of failure when possible.
 XML configuration for a Jenkins server. Yes. That is unreasonable and
 completely insane. Carson instead will think of ease of configuration
 management from the get-go.
+* Carson will provide meaningful APIs to make the _downstairs_ as
+programmable as possible. A gripe about my Jenkins experience is that
+the REST API is limited, and the script API is too open without reasonable
+security safe guards (any user with access to the `/script` path can do
+almost anything).
 
 A secondary goal of Carson is to offer well defined "protocols" for
 extension enabling others to contribute various forms of authentication and
 authorization integrations or numerous notification medium functionality
-(e.g. email, IRC, XMPP, Twitter). The way I plan to promote _pluggable
-design_ of separate concerns of the application is to define simple yet
-effective protocols for each separate concern.
+(e.g. email, IRC, XMPP, Twitter). The key to this will be a focus on
+separating concerns of the toolkit to define simple yet effective protocols
+for each separate concern.
 
 Note: this is quite opposite to the priorities of Jenkins and Hudson. The
 focus of these tools is on "flexibility" not usability. The above two goals
-are of utmost importance for usability, whereas focusing on complex class
-hierarchies to allow Jenkins/Hudson to be extended is focused purely on
+are of utmost importance for usability, whereas allowing anyone to override
+any part of the system or full remote execution is clearly only focused on
 flexibility.
 
 ## Timeline
