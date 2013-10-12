@@ -54,6 +54,13 @@ are of utmost importance for usability, whereas focusing on complex class
 hierarchies to allow Jenkins/Hudson to be extended is focused purely on
 flexibility.
 
+## Timeline
+
+TODO
+
+Basically whenever I have time unless you want to pay me to give up my day
+job to work on this more :)
+
 ## License
 
 Copyright (c) 2013, Susan Potter. All rights reserved.
