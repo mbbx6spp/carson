@@ -2,7 +2,7 @@
 
 The real butler of continuously delivered software products.
 
-![Carson](https://www.evernote.com/shard/s126/sh/5efe8c06-086f-411d-af2c-9d69023e3810/4727fe5d3a7e714ebad7862f351e5f3e/res/eb81e8a5-4fbc-46ac-9698-5dfea2547e53/skitch.png "Carson Rocks!")
+![Carson](http://images3.wikia.nocookie.net/__cb20120906140960/downtonabbey/images/thumb/e/e7/Tn-500_jimcarter.jpg/200px-Tn-500_jimcarter.jpg "Carson rocks your socks off!")
 
 ## Overview
 
