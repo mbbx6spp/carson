@@ -1,0 +1,15 @@
+%-*- mode: erlang -*-
+{application, carson,
+ [
+  {description, "Core OTP application for Carson CD environment"},
+  {vsn, git},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  riak_core
+                 ]},
+  {mod, { carson_app, []}},
+  {env, []}
+ ]}.
+% vim: set filetype=erlang tabstop=2:
