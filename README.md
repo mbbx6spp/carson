@@ -59,6 +59,13 @@ are of utmost importance for usability, whereas allowing anyone to override
 any part of the system or full remote execution is clearly only focused on
 flexibility.
 
+## Components
+
+There will be several components of the carson ecosystem:
+* [carson](https://github.com/mbbx6spp/carson/tree/master/apps/carson "The core")
+* [hughes](https://github.com/mbbx6spp/carson/tree/master/apps/hughes "The housekeeping")
+* [barrow](https://github.com/mbbx6spp/carson/tree/master/apps/barrow "The web view")
+
 ## Timeline
 
 TODO

@@ -1,11 +1,11 @@
 ERL					?= erl
 ERLC				= erlc
 EBIN_DIRS		:= $(wildcard deps/*/ebin)
-APPS				:= $(shell dir apps)
-REL_DIR     = rel
+APPS				:= $(shell ls apps)
+REL_DIR			= rel
 NODE				= carson
 REL					= carson
-SCRIPT_PATH  := $(REL_DIR)/$(NODE)/bin/$(REL)
+SCRIPT_PATH	:= $(REL_DIR)/$(NODE)/bin/$(REL)
 
 .PHONY: rel deps
 
