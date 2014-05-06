@@ -14,8 +14,12 @@ A job is a definition that will be run as a job instance.
 
 ### Job Instance
 
-A job instance is the runtime execution and related artifacts of a job. It may
-have one or more phases.
+A job instance is the runtime execution of a job which can yield artifacts.
+It may have one or more phases.
+
+### Artifact
+
+An artifact is one result of a particular job instance.
 
 
 ## Hughes
