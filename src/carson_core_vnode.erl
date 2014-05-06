@@ -1,7 +1,7 @@
 %%%'   HEADER
 %%% @copyright 2013 Susan Potter
 %%% @license   BSD 3-clause (see LICENSE file)
-%%% @doc
+%%% @doc The carson_core_vnode keeps track of job instances.
 %%%
 %%% @end
 -module(carson_core_vnode).
@@ -88,8 +88,8 @@ handle_handoff_data(BinData, #state{job_instances=JobInstances}=State) ->
   {reply, ok, State#state{job_instances=NewJobInstances}}.
 
 %% @doc encodes handoff item
-encode_handoff_item(K, V) ->
-  term_to_binary(K, V).
+encode_handoff_item(Id, JobInstance) ->
+  term_to_binary(Id, JobInstance).
 
 %% @doc When a process linked to the vnode dies this callback is invoked with
 %%      Pid of the crashed process with the Reason for crash and vnode's
